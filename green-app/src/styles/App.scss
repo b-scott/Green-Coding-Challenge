@@ -1,0 +1,92 @@
+$lightGrey: #c0c0c0;
+$veryLightGrey: #fafafa;
+$darkGrey: #555254;
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham.ttf');
+  }
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $veryLightGrey;
+}
+
+.formWrapper {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ffffff;
+  }
+
+body {
+    font-family: 'Gotham';
+    letter-spacing: -0.1em;
+}
+
+img {
+    max-width: 30%;
+  }
+
+h1 {
+    color: $darkGrey;
+}
+
+#intro {
+    color: $lightGrey;
+    padding: 0px;
+    position: relative;
+    bottom: 15px;
+}
+
+#email {
+    color: $darkGrey;
+    position: relative;
+    top: 15px;
+}
+
+input[type=text], select {
+    width: 90%;
+    padding: 10px 0px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid $lightGrey;
+    border-radius: 4px;
+}
+
+.checkbox-toolbar {
+    border-radius: 40%;
+}
+
+/* .checkbox-toolbar input{
+    visibility: hidden;
+}
+
+.checkbox-toolbar{
+    width: 15px;
+    height: 15px;
+    background: #555;
+    margin: 20px 80px;
+    position: relative;
+    border-radius: 5px;
+}
+
+*/
+
+input[type=submit] {
+    width: 25%;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    margin: 50px 0px;
+    border: 1px solid $lightGrey;
+    border-radius: 4px;
+    cursor: pointer;
+}
